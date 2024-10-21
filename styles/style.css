@@ -125,3 +125,128 @@ section {
     line-height: 42px;
 }
 }
+
+/* Logo section */
+.logo-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.logo-icon{
+    margin: 10px 30px;
+}
+@media screen and (min-width: 992px) {
+    .logo-section{
+        margin: 0 auto 100px;
+        height: 110px;
+        width: 90%;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+        border-top: 1px solid rgba(128, 128, 128, 0.3);
+    }
+}
+
+/* Collection Card Styles */
+.collection-section h2 {
+    text-align: center;
+    font-weight: 600;
+    line-height: 25px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.items {
+    display: grid;
+}
+.item {
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.6);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px 20px;
+}
+.item img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+.item-content {
+    width: 80%; 
+}
+.item-content h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.fa-star,
+.fa-star-half-stroke {
+    color: #fb8200;
+}
+.item-content p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 10px;
+}
+.transparent-button {
+    display: flex;
+    justify-content: flex-end;
+}
+.transparent-button button {
+    background: transparent;
+    color: var(--button-background);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 996px) {
+    .collection-section {
+    width: 80%;
+    }
+    .items {
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Feature sectiion */
+
+.feature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.feature-content {
+    text-align: center;
+}
+
+.feature-content h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.feature-content p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.feature-button {
+    border-radius: 0;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.feature-image {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+    .feature-section {
+        flex-direction: row-reverse;
+    }
+    .feature-content {
+        text-align: left;
+    }
+    .feature-image {
+        margin-right: 150px;
+    }
+}
