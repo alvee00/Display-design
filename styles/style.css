@@ -250,3 +250,25 @@ section {
         margin-right: 150px;
     }
 }
+
+/* Footer section */
+footer {
+    height: 240px;
+    background: var(--footer-background);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 25px;
+}
